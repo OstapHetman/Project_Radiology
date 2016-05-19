@@ -130,5 +130,10 @@ namespace Project_Radiology
         {
 
         }
+
+        private void analysisDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.dataGridViewTextBoxColumn3.Items.AddRange(new object[] {"In process", "Done", "Checked"});
+        }
     }
 }

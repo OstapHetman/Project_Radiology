@@ -31,31 +31,31 @@ namespace Project_Radiology
 
         private void adddoc_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Formdsdas1 k = new Formdsdas1();
-            k.Show();
+           
+            add_doctor doc = new add_doctor();
+            doc.Show();
         }
 
         private void addengineer_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            eng_adm m = new eng_adm();
-            m.Show();
+            add_engineer eng = new add_engineer();
+            eng.Show();
+
+
 
         }
 
         private void addlaborator_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            lab_adm q = new lab_adm();
-            q.Show();
+            add_laboratory lab = new add_laboratory();
+            lab.Show();
+
         }
 
         private void addhospital_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            hosp_adm w = new hosp_adm();
-            w.Show();
+            add_hospital hosp = new add_hospital();
+            hosp.Show();
         }
 
         private void statistic_btn_Click(object sender, EventArgs e)

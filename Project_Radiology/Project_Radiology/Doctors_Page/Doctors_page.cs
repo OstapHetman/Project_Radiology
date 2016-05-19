@@ -27,9 +27,8 @@ namespace Project_Radiology
 
         private void newpatient_btn_Click(object sender, System.EventArgs e)
         {
-            this.Hide();
-            Doctors_page_NEW_PATIENT dcpat = new Doctors_page_NEW_PATIENT();
-            dcpat.Show();
+            add_patient ad1 = new add_patient();
+            ad1.Show();
         }
 
         private void databse_btn_Click(object sender, System.EventArgs e)
@@ -56,6 +55,13 @@ namespace Project_Radiology
         private void Doctors_page_Load(object sender, System.EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Doctors_page_NEW_PATIENT pat = new Doctors_page_NEW_PATIENT();
+            pat.Show();
         }
     }
 }

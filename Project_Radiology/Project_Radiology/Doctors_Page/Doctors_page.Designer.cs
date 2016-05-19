@@ -34,6 +34,7 @@
             this.databse_btn = new System.Windows.Forms.Button();
             this.createanalysis_btn = new System.Windows.Forms.Button();
             this.statistic_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // log_btn1
@@ -52,7 +53,7 @@
             // newpatient_btn
             // 
             this.newpatient_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.newpatient_btn.Location = new System.Drawing.Point(379, 187);
+            this.newpatient_btn.Location = new System.Drawing.Point(388, 147);
             this.newpatient_btn.Name = "newpatient_btn";
             this.newpatient_btn.Size = new System.Drawing.Size(189, 38);
             this.newpatient_btn.TabIndex = 1;
@@ -63,18 +64,18 @@
             // databse_btn
             // 
             this.databse_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.databse_btn.Location = new System.Drawing.Point(379, 241);
+            this.databse_btn.Location = new System.Drawing.Point(388, 325);
             this.databse_btn.Name = "databse_btn";
             this.databse_btn.Size = new System.Drawing.Size(189, 38);
             this.databse_btn.TabIndex = 2;
-            this.databse_btn.Text = "Database analysis";
+            this.databse_btn.Text = "View analysis";
             this.databse_btn.UseVisualStyleBackColor = true;
             this.databse_btn.Click += new System.EventHandler(this.databse_btn_Click);
             // 
             // createanalysis_btn
             // 
             this.createanalysis_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createanalysis_btn.Location = new System.Drawing.Point(379, 295);
+            this.createanalysis_btn.Location = new System.Drawing.Point(388, 268);
             this.createanalysis_btn.Name = "createanalysis_btn";
             this.createanalysis_btn.Size = new System.Drawing.Size(189, 38);
             this.createanalysis_btn.TabIndex = 3;
@@ -85,13 +86,24 @@
             // statistic_btn
             // 
             this.statistic_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.statistic_btn.Location = new System.Drawing.Point(379, 348);
+            this.statistic_btn.Location = new System.Drawing.Point(388, 384);
             this.statistic_btn.Name = "statistic_btn";
             this.statistic_btn.Size = new System.Drawing.Size(189, 38);
             this.statistic_btn.TabIndex = 4;
             this.statistic_btn.Text = "Statistic";
             this.statistic_btn.UseVisualStyleBackColor = true;
             this.statistic_btn.Click += new System.EventHandler(this.statistic_btn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(388, 207);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 38);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "View patients";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Doctors_page
             // 
@@ -100,6 +112,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.statistic_btn);
             this.Controls.Add(this.createanalysis_btn);
             this.Controls.Add(this.databse_btn);
@@ -108,7 +121,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Doctors_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Page doctor";
+            this.Text = "Doctro\'s page";
             this.Load += new System.EventHandler(this.Doctors_page_Load);
             this.ResumeLayout(false);
 
@@ -121,5 +134,6 @@
         private System.Windows.Forms.Button databse_btn;
         private System.Windows.Forms.Button createanalysis_btn;
         private System.Windows.Forms.Button statistic_btn;
+        private System.Windows.Forms.Button button1;
     }
 }

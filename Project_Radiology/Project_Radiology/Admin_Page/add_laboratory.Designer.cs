@@ -92,7 +92,7 @@
             this.save_btn4.Name = "save_btn4";
             this.save_btn4.Size = new System.Drawing.Size(75, 25);
             this.save_btn4.TabIndex = 6;
-            this.save_btn4.Text = "Save";
+            this.save_btn4.Text = "Add";
             this.save_btn4.UseVisualStyleBackColor = true;
             this.save_btn4.Click += new System.EventHandler(this.save_btn4_Click);
             // 
