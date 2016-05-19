@@ -238,6 +238,12 @@
     <Compile Include="Type_of_analysis.cs">
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Page\view_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\view_items.Designer.cs">
+      <DependentUpon>view_items.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin_Page\add_hospital.resx">
       <DependentUpon>add_hospital.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +319,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_Page\view_items.resx">
+      <DependentUpon>view_items.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Database.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Database.Designer.cs</LastGenOutput>

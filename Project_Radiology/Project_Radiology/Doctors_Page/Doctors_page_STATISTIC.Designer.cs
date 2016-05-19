@@ -37,9 +37,9 @@
             this.back_btn4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn4.Image = ((System.Drawing.Image)(resources.GetObject("back_btn4.Image")));
             this.back_btn4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn4.Location = new System.Drawing.Point(796, 63);
+            this.back_btn4.Location = new System.Drawing.Point(784, 61);
             this.back_btn4.Name = "back_btn4";
-            this.back_btn4.Size = new System.Drawing.Size(75, 25);
+            this.back_btn4.Size = new System.Drawing.Size(85, 25);
             this.back_btn4.TabIndex = 2;
             this.back_btn4.Text = "Back";
             this.back_btn4.UseVisualStyleBackColor = true;

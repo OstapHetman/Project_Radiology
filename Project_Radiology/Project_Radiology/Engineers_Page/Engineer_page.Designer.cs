@@ -39,9 +39,9 @@
             this.log_btn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn2.Image = ((System.Drawing.Image)(resources.GetObject("log_btn2.Image")));
             this.log_btn2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn2.Location = new System.Drawing.Point(796, 64);
+            this.log_btn2.Location = new System.Drawing.Point(787, 60);
             this.log_btn2.Name = "log_btn2";
-            this.log_btn2.Size = new System.Drawing.Size(75, 25);
+            this.log_btn2.Size = new System.Drawing.Size(85, 25);
             this.log_btn2.TabIndex = 1;
             this.log_btn2.Text = "LogOut";
             this.log_btn2.UseVisualStyleBackColor = true;

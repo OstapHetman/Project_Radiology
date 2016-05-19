@@ -33,3 +33,4 @@ C:\Users\Ostap\Documents\Visual Studio 2013\Projects\Project_Radiology\Project_R
 C:\Users\Ostap\Documents\Visual Studio 2013\Projects\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.add_engineer.resources
 C:\Users\Ostap\Documents\Visual Studio 2013\Projects\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.add_laboratory.resources
 C:\Users\Ostap\Documents\Visual Studio 2013\Projects\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.add_hospital.resources
+C:\Users\Ostap\Documents\Visual Studio 2013\Projects\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.view_items.resources

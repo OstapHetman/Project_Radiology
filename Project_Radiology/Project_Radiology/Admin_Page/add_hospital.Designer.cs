@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,9 +77,9 @@
             this.save_btn5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save_btn5.Image = ((System.Drawing.Image)(resources.GetObject("save_btn5.Image")));
             this.save_btn5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.save_btn5.Location = new System.Drawing.Point(170, 180);
+            this.save_btn5.Location = new System.Drawing.Point(139, 183);
             this.save_btn5.Name = "save_btn5";
-            this.save_btn5.Size = new System.Drawing.Size(75, 25);
+            this.save_btn5.Size = new System.Drawing.Size(85, 25);
             this.save_btn5.TabIndex = 6;
             this.save_btn5.Text = "Add";
             this.save_btn5.UseVisualStyleBackColor = true;
@@ -130,19 +129,6 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "№ of workers";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(89, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // add_hospital
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,7 +136,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -180,6 +165,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
     }
 }

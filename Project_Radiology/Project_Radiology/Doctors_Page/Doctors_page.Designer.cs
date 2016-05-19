@@ -42,9 +42,9 @@
             this.log_btn1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn1.Image = ((System.Drawing.Image)(resources.GetObject("log_btn1.Image")));
             this.log_btn1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn1.Location = new System.Drawing.Point(796, 61);
+            this.log_btn1.Location = new System.Drawing.Point(788, 60);
             this.log_btn1.Name = "log_btn1";
-            this.log_btn1.Size = new System.Drawing.Size(75, 25);
+            this.log_btn1.Size = new System.Drawing.Size(85, 25);
             this.log_btn1.TabIndex = 0;
             this.log_btn1.Text = "LogOut";
             this.log_btn1.UseVisualStyleBackColor = true;
@@ -53,6 +53,7 @@
             // newpatient_btn
             // 
             this.newpatient_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.newpatient_btn.Image = ((System.Drawing.Image)(resources.GetObject("newpatient_btn.Image")));
             this.newpatient_btn.Location = new System.Drawing.Point(388, 147);
             this.newpatient_btn.Name = "newpatient_btn";
             this.newpatient_btn.Size = new System.Drawing.Size(189, 38);

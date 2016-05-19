@@ -25,7 +25,7 @@ namespace Project_Radiology
         private void log_btn3z_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Admin_pages ww = new Admin_pages();
+            view_items ww = new view_items();
             ww.Show();
         }
 

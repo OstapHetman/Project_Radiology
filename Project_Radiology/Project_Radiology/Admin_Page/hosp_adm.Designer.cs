@@ -40,7 +40,6 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Save_btn = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.log_btn3z.Location = new System.Drawing.Point(787, 62);
             this.log_btn3z.Name = "log_btn3z";
-            this.log_btn3z.Size = new System.Drawing.Size(84, 21);
+            this.log_btn3z.Size = new System.Drawing.Size(85, 25);
             this.log_btn3z.TabIndex = 3;
             this.log_btn3z.Text = "Back";
             this.log_btn3z.UseVisualStyleBackColor = true;
@@ -133,19 +132,6 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "№ of workers";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(787, 434);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Add/Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(134, 67);
@@ -170,9 +156,9 @@
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Save_btn.Location = new System.Drawing.Point(690, 434);
+            this.Save_btn.Location = new System.Drawing.Point(787, 438);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(84, 23);
+            this.Save_btn.Size = new System.Drawing.Size(85, 25);
             this.Save_btn.TabIndex = 29;
             this.Save_btn.Text = "Save changes";
             this.Save_btn.UseVisualStyleBackColor = true;
@@ -188,7 +174,6 @@
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.hospitalDataGridView);
             this.Controls.Add(this.log_btn3z);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -216,7 +201,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Save_btn;

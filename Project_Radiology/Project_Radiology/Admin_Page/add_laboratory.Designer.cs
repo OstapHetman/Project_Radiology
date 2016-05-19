@@ -40,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -88,9 +87,9 @@
             this.save_btn4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save_btn4.Image = ((System.Drawing.Image)(resources.GetObject("save_btn4.Image")));
             this.save_btn4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.save_btn4.Location = new System.Drawing.Point(168, 190);
+            this.save_btn4.Location = new System.Drawing.Point(140, 191);
             this.save_btn4.Name = "save_btn4";
-            this.save_btn4.Size = new System.Drawing.Size(75, 25);
+            this.save_btn4.Size = new System.Drawing.Size(85, 25);
             this.save_btn4.TabIndex = 6;
             this.save_btn4.Text = "Add";
             this.save_btn4.UseVisualStyleBackColor = true;
@@ -151,19 +150,6 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "HospitalID";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(87, 190);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // add_laboratory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,7 +157,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -205,6 +190,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
     }
 }

@@ -42,7 +42,6 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.add_btn_2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Save_btn = new System.Windows.Forms.Button();
@@ -58,7 +57,7 @@
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.log_btn3z.Location = new System.Drawing.Point(786, 60);
             this.log_btn3z.Name = "log_btn3z";
-            this.log_btn3z.Size = new System.Drawing.Size(85, 20);
+            this.log_btn3z.Size = new System.Drawing.Size(85, 25);
             this.log_btn3z.TabIndex = 2;
             this.log_btn3z.Text = "Back";
             this.log_btn3z.UseVisualStyleBackColor = true;
@@ -150,19 +149,6 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Password";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // add_btn_2
-            // 
-            this.add_btn_2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn_2.Image = ((System.Drawing.Image)(resources.GetObject("add_btn_2.Image")));
-            this.add_btn_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.add_btn_2.Location = new System.Drawing.Point(786, 436);
-            this.add_btn_2.Name = "add_btn_2";
-            this.add_btn_2.Size = new System.Drawing.Size(85, 23);
-            this.add_btn_2.TabIndex = 17;
-            this.add_btn_2.Text = "Add/Delete";
-            this.add_btn_2.UseVisualStyleBackColor = true;
-            this.add_btn_2.Click += new System.EventHandler(this.add_btn_2_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(112, 65);
@@ -187,9 +173,9 @@
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Save_btn.Location = new System.Drawing.Point(696, 436);
+            this.Save_btn.Location = new System.Drawing.Point(786, 440);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(84, 23);
+            this.Save_btn.Size = new System.Drawing.Size(85, 25);
             this.Save_btn.TabIndex = 28;
             this.Save_btn.Text = "Save changes";
             this.Save_btn.UseVisualStyleBackColor = true;
@@ -205,13 +191,12 @@
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.add_btn_2);
             this.Controls.Add(this.dOCTORS_1DataGridView);
             this.Controls.Add(this.log_btn3z);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Formdsdas1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add a doctor";
+            this.Text = "View doctor\'s";
             this.Load += new System.EventHandler(this.Formdsdas1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOCTORS_1BindingSource)).EndInit();
@@ -235,7 +220,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.Button add_btn_2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Save_btn;

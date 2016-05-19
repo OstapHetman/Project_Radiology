@@ -15,6 +15,9 @@ namespace Project_Radiology
     {
         HospitalEntities eng;
         SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
+        SqlDataAdapter sda;
+        SqlCommandBuilder scb;
+        DataTable dt;
 
         public eng_adm()
         {
@@ -24,7 +27,7 @@ namespace Project_Radiology
         private void log_btn3z_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Admin_pages uu = new Admin_pages();
+            view_items uu = new view_items();
             uu.Show();
         }
 
@@ -48,8 +51,8 @@ namespace Project_Radiology
         private void button1_Click(object sender, EventArgs e)
         {
 
-            add_engineer add2 = new add_engineer();
-            add2.Show();
+            scb = new SqlCommandBuilder(sda);
+            sda.Update(dt);
 
         }
 

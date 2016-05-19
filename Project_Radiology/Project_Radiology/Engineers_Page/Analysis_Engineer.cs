@@ -14,12 +14,14 @@ namespace Project_Radiology
 {
     public partial class Analysis_Engineer : Form
     {
-        //SqlDataAdapter sda;
-        SqlCommandBuilder scb;
-        DataTable dt;
+        
 
         HospitalEntities we;
+
         SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
+        SqlDataAdapter sda;
+        SqlCommandBuilder scb;
+        DataTable dt;
 
         public Analysis_Engineer()
         {
@@ -112,6 +114,9 @@ namespace Project_Radiology
 
         private void Save_btn_Click(object sender, EventArgs e)
         {
+            //scb = new SqlCommandBuilder(sda);
+            //sda.Update(dt);
+
             this.Validate();
 
             this.analysisBindingSource.EndEdit();
@@ -128,7 +133,8 @@ namespace Project_Radiology
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            //scb = new SqlCommandBuilder(sda);
+            //sda.Update(dt);
         }
 
         private void analysisDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

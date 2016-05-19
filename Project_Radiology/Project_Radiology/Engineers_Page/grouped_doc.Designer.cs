@@ -36,11 +36,11 @@
             this.analysisTableAdapter = new Project_Radiology.HospitalDataSetTableAdapters.AnalysisTableAdapter();
             this.tableAdapterManager = new Project_Radiology.HospitalDataSetTableAdapters.TableAdapterManager();
             this.analysisDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisDataGridView)).BeginInit();
@@ -51,9 +51,9 @@
             this.back_btn166.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn166.Image = ((System.Drawing.Image)(resources.GetObject("back_btn166.Image")));
             this.back_btn166.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn166.Location = new System.Drawing.Point(794, 62);
+            this.back_btn166.Location = new System.Drawing.Point(786, 60);
             this.back_btn166.Name = "back_btn166";
-            this.back_btn166.Size = new System.Drawing.Size(75, 25);
+            this.back_btn166.Size = new System.Drawing.Size(85, 25);
             this.back_btn166.TabIndex = 3;
             this.back_btn166.Text = "Back";
             this.back_btn166.UseVisualStyleBackColor = true;
@@ -105,6 +105,24 @@
             this.analysisDataGridView.Size = new System.Drawing.Size(353, 220);
             this.analysisDataGridView.TabIndex = 4;
             // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Author";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Doctor";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Type of analysis";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Type of analysis";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "State of analysis";
+            this.dataGridViewTextBoxColumn3.HeaderText = "State of analysis";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -123,24 +141,6 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Author";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Doctor";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Type of analysis";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Type of analysis";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "State of analysis";
-            this.dataGridViewTextBoxColumn3.HeaderText = "State of analysis";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // grouped_doc
             // 

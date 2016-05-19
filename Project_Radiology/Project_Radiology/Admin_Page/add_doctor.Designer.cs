@@ -42,7 +42,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btn_del2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -114,9 +113,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(186, 198);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(153, 201);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(85, 25);
             this.button1.TabIndex = 23;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
@@ -170,17 +170,6 @@
             this.textBox1.Size = new System.Drawing.Size(122, 23);
             this.textBox1.TabIndex = 17;
             // 
-            // btn_del2
-            // 
-            this.btn_del2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_del2.Location = new System.Drawing.Point(85, 198);
-            this.btn_del2.Name = "btn_del2";
-            this.btn_del2.Size = new System.Drawing.Size(75, 23);
-            this.btn_del2.TabIndex = 30;
-            this.btn_del2.Text = "Delete";
-            this.btn_del2.UseVisualStyleBackColor = true;
-            this.btn_del2.Click += new System.EventHandler(this.btn_del2_Click);
-            // 
             // add_doctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +177,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.btn_del2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -226,6 +214,5 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btn_del2;
     }
 }

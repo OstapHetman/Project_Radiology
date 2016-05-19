@@ -45,16 +45,15 @@
             this.fKTypeOfAnalysisAnalysisBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.type_of_analysisTableAdapter = new Project_Radiology.HospitalDataSetTableAdapters.Type_of_analysisTableAdapter();
             this.analysisDataGridView = new System.Windows.Forms.DataGridView();
-            this.analysisBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.fKTypeOfAnalysisAnalysisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.Save_btn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.analysisBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKTypeOfAnalysisAnalysisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Save_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosisBindingSource)).BeginInit();
@@ -71,7 +70,7 @@
             this.back_btn12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn12.Image = ((System.Drawing.Image)(resources.GetObject("back_btn12.Image")));
             this.back_btn12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn12.Location = new System.Drawing.Point(779, 63);
+            this.back_btn12.Location = new System.Drawing.Point(788, 60);
             this.back_btn12.Name = "back_btn12";
             this.back_btn12.Size = new System.Drawing.Size(85, 25);
             this.back_btn12.TabIndex = 2;
@@ -180,42 +179,6 @@
             this.analysisDataGridView.TabIndex = 9;
             this.analysisDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.analysisDataGridView_CellContentClick);
             // 
-            // analysisBindingSource2
-            // 
-            this.analysisBindingSource2.DataMember = "Analysis";
-            this.analysisBindingSource2.DataSource = this.hospitalDataSet;
-            // 
-            // fKTypeOfAnalysisAnalysisBindingSource1
-            // 
-            this.fKTypeOfAnalysisAnalysisBindingSource1.DataMember = "FK_Type of analysis_Analysis";
-            this.fKTypeOfAnalysisAnalysisBindingSource1.DataSource = this.analysisBindingSource1;
-            // 
-            // Save_btn
-            // 
-            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
-            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Save_btn.Location = new System.Drawing.Point(779, 437);
-            this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(85, 25);
-            this.Save_btn.TabIndex = 10;
-            this.Save_btn.Text = "Save changes";
-            this.Save_btn.UseVisualStyleBackColor = true;
-            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(688, 437);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 25);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
@@ -240,6 +203,11 @@
             this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn3.ValueMember = "State of analysis";
             // 
+            // analysisBindingSource2
+            // 
+            this.analysisBindingSource2.DataMember = "Analysis";
+            this.analysisBindingSource2.DataSource = this.hospitalDataSet;
+            // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Date created";
@@ -258,6 +226,24 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Patient_SSN";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // fKTypeOfAnalysisAnalysisBindingSource1
+            // 
+            this.fKTypeOfAnalysisAnalysisBindingSource1.DataMember = "FK_Type of analysis_Analysis";
+            this.fKTypeOfAnalysisAnalysisBindingSource1.DataSource = this.analysisBindingSource1;
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
+            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Save_btn.Location = new System.Drawing.Point(788, 437);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(85, 25);
+            this.Save_btn.TabIndex = 10;
+            this.Save_btn.Text = "Save changes";
+            this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
+            // 
             // Analysis_Engineer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,7 +251,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.analysisDataGridView);
             this.Controls.Add(this.label1);
@@ -310,7 +295,6 @@
         private System.Windows.Forms.BindingSource fKTypeOfAnalysisAnalysisBindingSource1;
         private System.Windows.Forms.BindingSource analysisBindingSource2;
         private System.Windows.Forms.Button Save_btn;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;

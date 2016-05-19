@@ -45,9 +45,9 @@
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3z.Location = new System.Drawing.Point(795, 60);
+            this.log_btn3z.Location = new System.Drawing.Point(788, 60);
             this.log_btn3z.Name = "log_btn3z";
-            this.log_btn3z.Size = new System.Drawing.Size(75, 25);
+            this.log_btn3z.Size = new System.Drawing.Size(85, 25);
             this.log_btn3z.TabIndex = 3;
             this.log_btn3z.Text = "Back";
             this.log_btn3z.UseVisualStyleBackColor = true;

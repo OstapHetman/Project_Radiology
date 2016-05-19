@@ -64,5 +64,25 @@ namespace Project_Radiology
             statis_adm r = new statis_adm();
             r.Show();
         }
+
+        private void Admin_pages_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "hospitalDataSet.DOCTORS_1". При необходимости она может быть перемещена или удалена.
+            this.dOCTORS_1TableAdapter.Fill(this.hospitalDataSet.DOCTORS_1);
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            view_items vv = new view_items();
+            vv.Show();
+
+        }
     }
 }
