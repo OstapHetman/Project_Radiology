@@ -30,120 +30,55 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start_page));
             this.login_btn = new System.Windows.Forms.Button();
-            this.docpage_btn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.adminpage_btn = new System.Windows.Forms.Button();
-            this.engineerpage_btn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // login_btn
             // 
-            this.login_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.login_btn.Location = new System.Drawing.Point(352, 205);
+            this.login_btn.BackColor = System.Drawing.Color.Transparent;
+            this.login_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("login_btn.BackgroundImage")));
+            this.login_btn.ForeColor = System.Drawing.Color.DimGray;
+            this.login_btn.Location = new System.Drawing.Point(525, 297);
             this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(83, 28);
+            this.login_btn.Size = new System.Drawing.Size(85, 25);
             this.login_btn.TabIndex = 0;
             this.login_btn.Text = "Login";
             this.login_btn.UseVisualStyleBackColor = false;
-            // 
-            // docpage_btn
-            // 
-            this.docpage_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.docpage_btn.Location = new System.Drawing.Point(201, 302);
-            this.docpage_btn.Name = "docpage_btn";
-            this.docpage_btn.Size = new System.Drawing.Size(136, 29);
-            this.docpage_btn.TabIndex = 1;
-            this.docpage_btn.Text = "Doctor\'s page";
-            this.docpage_btn.UseVisualStyleBackColor = false;
-            this.docpage_btn.Click += new System.EventHandler(this.docpage_btn_Click);
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(275, 171);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox1.Location = new System.Drawing.Point(365, 219);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 25);
+            this.textBox1.Size = new System.Drawing.Size(231, 18);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(275, 139);
+            this.textBox2.BackColor = System.Drawing.Color.Ivory;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox2.Location = new System.Drawing.Point(365, 261);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 25);
+            this.textBox2.Size = new System.Drawing.Size(231, 18);
             this.textBox2.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightBlue;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(199, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 17);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "UserName";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.LightBlue;
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(205, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Password";
-            // 
-            // adminpage_btn
-            // 
-            this.adminpage_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.adminpage_btn.Location = new System.Drawing.Point(353, 302);
-            this.adminpage_btn.Name = "adminpage_btn";
-            this.adminpage_btn.Size = new System.Drawing.Size(136, 29);
-            this.adminpage_btn.TabIndex = 8;
-            this.adminpage_btn.Text = "Admin\'s page";
-            this.adminpage_btn.UseVisualStyleBackColor = false;
-            this.adminpage_btn.Click += new System.EventHandler(this.adminpage_btn_Click);
-            // 
-            // engineerpage_btn
-            // 
-            this.engineerpage_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.engineerpage_btn.Location = new System.Drawing.Point(505, 302);
-            this.engineerpage_btn.Name = "engineerpage_btn";
-            this.engineerpage_btn.Size = new System.Drawing.Size(136, 29);
-            this.engineerpage_btn.TabIndex = 9;
-            this.engineerpage_btn.Text = "Engineer\'s page";
-            this.engineerpage_btn.UseVisualStyleBackColor = false;
-            this.engineerpage_btn.Click += new System.EventHandler(this.engineerpage_btn_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.LightBlue;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(294, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 30);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "WELCOME !";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // linkLabel1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.LightSkyBlue;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.LightBlue;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.DarkGray;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.Location = new System.Drawing.Point(306, 236);
+            this.linkLabel1.Location = new System.Drawing.Point(314, 304);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(129, 13);
             this.linkLabel1.TabIndex = 11;
@@ -158,16 +93,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(653, 343);
+            this.ClientSize = new System.Drawing.Size(929, 520);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.engineerpage_btn);
-            this.Controls.Add(this.adminpage_btn);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.docpage_btn);
             this.Controls.Add(this.login_btn);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.Black;
@@ -176,6 +105,7 @@
             this.Name = "Start_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Start page";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_page_FormClosing);
             this.Load += new System.EventHandler(this.Start_page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -185,14 +115,8 @@
         #endregion
 
         private System.Windows.Forms.Button login_btn;
-        private System.Windows.Forms.Button docpage_btn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button adminpage_btn;
-        private System.Windows.Forms.Button engineerpage_btn;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

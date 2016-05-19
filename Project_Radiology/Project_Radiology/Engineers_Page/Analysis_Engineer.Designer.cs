@@ -68,6 +68,7 @@
             // back_btn12
             // 
             this.back_btn12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn12.ForeColor = System.Drawing.Color.DimGray;
             this.back_btn12.Image = ((System.Drawing.Image)(resources.GetObject("back_btn12.Image")));
             this.back_btn12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.back_btn12.Location = new System.Drawing.Point(788, 60);
@@ -172,7 +173,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.analysisDataGridView.DataSource = this.analysisBindingSource1;
-            this.analysisDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
+            this.analysisDataGridView.GridColor = System.Drawing.Color.DimGray;
             this.analysisDataGridView.Location = new System.Drawing.Point(139, 154);
             this.analysisDataGridView.Name = "analysisDataGridView";
             this.analysisDataGridView.Size = new System.Drawing.Size(652, 277);
@@ -234,6 +235,7 @@
             // Save_btn
             // 
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.ForeColor = System.Drawing.Color.DimGray;
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Save_btn.Location = new System.Drawing.Point(788, 437);
@@ -260,6 +262,7 @@
             this.Name = "Analysis_Engineer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Analysis";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Analysis_Engineer_FormClosing);
             this.Load += new System.EventHandler(this.Analysis_Engineer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

@@ -47,5 +47,18 @@ namespace Project_Radiology
             grouped_pat hh = new grouped_pat();
             hh.Show();
         }
+
+        private void statistic_eng_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

@@ -37,6 +37,7 @@
             // log_btn2
             // 
             this.log_btn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log_btn2.ForeColor = System.Drawing.Color.DimGray;
             this.log_btn2.Image = ((System.Drawing.Image)(resources.GetObject("log_btn2.Image")));
             this.log_btn2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.log_btn2.Location = new System.Drawing.Point(787, 60);
@@ -50,6 +51,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(388, 224);
             this.button1.Name = "button1";
@@ -62,6 +64,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(388, 285);
             this.button2.Name = "button2";
@@ -85,6 +88,7 @@
             this.Name = "Engineer_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Engineer\'s page";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Engineer_page_FormClosing);
             this.ResumeLayout(false);
 
         }

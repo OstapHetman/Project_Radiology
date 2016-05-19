@@ -39,9 +39,10 @@
             // log_btn3
             // 
             this.log_btn3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log_btn3.ForeColor = System.Drawing.Color.DimGray;
             this.log_btn3.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3.Image")));
             this.log_btn3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3.Location = new System.Drawing.Point(785, 60);
+            this.log_btn3.Location = new System.Drawing.Point(789, 59);
             this.log_btn3.Name = "log_btn3";
             this.log_btn3.Size = new System.Drawing.Size(85, 25);
             this.log_btn3.TabIndex = 2;
@@ -52,6 +53,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(396, 174);
             this.button1.Name = "button1";
@@ -64,6 +66,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(396, 225);
             this.button2.Name = "button2";
@@ -76,6 +79,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(396, 279);
             this.button3.Name = "button3";
@@ -88,6 +92,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.ForeColor = System.Drawing.Color.DimGray;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(396, 331);
             this.button4.Name = "button4";
@@ -113,6 +118,7 @@
             this.Name = "view_items";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View items";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.view_items_FormClosing);
             this.ResumeLayout(false);
 
         }

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doctors_page_DATABASE));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.back_btn2 = new System.Windows.Forms.Button();
             this.hospitalDataSet = new Project_Radiology.HospitalDataSet();
             this.analysisBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -58,9 +58,10 @@
             // back_btn2
             // 
             this.back_btn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn2.ForeColor = System.Drawing.Color.DimGray;
             this.back_btn2.Image = ((System.Drawing.Image)(resources.GetObject("back_btn2.Image")));
             this.back_btn2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn2.Location = new System.Drawing.Point(785, 62);
+            this.back_btn2.Location = new System.Drawing.Point(785, 58);
             this.back_btn2.Name = "back_btn2";
             this.back_btn2.Size = new System.Drawing.Size(85, 25);
             this.back_btn2.TabIndex = 2;
@@ -114,14 +115,14 @@
             this.analysisDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.analysisDataGridView.Location = new System.Drawing.Point(140, 129);
             this.analysisDataGridView.Name = "analysisDataGridView";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.analysisDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.analysisDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.analysisDataGridView.Size = new System.Drawing.Size(650, 301);
             this.analysisDataGridView.TabIndex = 3;
             // 
@@ -200,6 +201,7 @@
             // Save_btn
             // 
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.ForeColor = System.Drawing.Color.DimGray;
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Save_btn.Location = new System.Drawing.Point(785, 436);
@@ -222,10 +224,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.analysisDataGridView);
             this.Controls.Add(this.back_btn2);
+            this.ForeColor = System.Drawing.Color.DimGray;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Doctors_page_DATABASE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Database";
+            this.Text = "View Analysis";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_DATABASE_FormClosing);
             this.Load += new System.EventHandler(this.Doctors_page_DATABASE_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

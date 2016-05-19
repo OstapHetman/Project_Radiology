@@ -49,6 +49,7 @@
             // back_btn166
             // 
             this.back_btn166.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn166.ForeColor = System.Drawing.Color.DimGray;
             this.back_btn166.Image = ((System.Drawing.Image)(resources.GetObject("back_btn166.Image")));
             this.back_btn166.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.back_btn166.Location = new System.Drawing.Point(786, 60);
@@ -157,6 +158,7 @@
             this.Name = "grouped_doc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grouped by doctors";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.grouped_doc_FormClosing);
             this.Load += new System.EventHandler(this.grouped_doc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

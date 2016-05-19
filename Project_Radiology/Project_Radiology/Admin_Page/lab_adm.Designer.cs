@@ -52,9 +52,10 @@
             // log_btn3z
             // 
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log_btn3z.ForeColor = System.Drawing.Color.DimGray;
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3z.Location = new System.Drawing.Point(787, 62);
+            this.log_btn3z.Location = new System.Drawing.Point(787, 58);
             this.log_btn3z.Name = "log_btn3z";
             this.log_btn3z.Size = new System.Drawing.Size(85, 25);
             this.log_btn3z.TabIndex = 3;
@@ -162,6 +163,7 @@
             // Save_btn
             // 
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.ForeColor = System.Drawing.Color.DimGray;
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Save_btn.Location = new System.Drawing.Point(787, 436);
@@ -188,6 +190,7 @@
             this.Name = "lab_adm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add  a laboratory";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.lab_adm_FormClosing);
             this.Load += new System.EventHandler(this.lab_adm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.laboratoryBindingSource)).EndInit();

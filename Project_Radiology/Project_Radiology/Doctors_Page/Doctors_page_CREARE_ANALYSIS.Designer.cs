@@ -48,6 +48,7 @@
             // back_btn1
             // 
             this.back_btn1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_btn1.ForeColor = System.Drawing.Color.DimGray;
             this.back_btn1.Image = ((System.Drawing.Image)(resources.GetObject("back_btn1.Image")));
             this.back_btn1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.back_btn1.Location = new System.Drawing.Point(787, 60);
@@ -88,6 +89,8 @@
             // 
             // crt_btn
             // 
+            this.crt_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.crt_btn.ForeColor = System.Drawing.Color.DimGray;
             this.crt_btn.Image = ((System.Drawing.Image)(resources.GetObject("crt_btn.Image")));
             this.crt_btn.Location = new System.Drawing.Point(469, 329);
             this.crt_btn.Name = "crt_btn";
@@ -202,6 +205,7 @@
             this.Name = "Doctors_page_CREARE_ANALYSIS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create analysis";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_CREARE_ANALYSIS_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

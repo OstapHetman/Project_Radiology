@@ -84,5 +84,23 @@ namespace Project_Radiology
             vv.Show();
 
         }
+
+        private void Admin_pages_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void Admin_pages_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

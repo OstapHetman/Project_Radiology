@@ -54,6 +54,7 @@
             // log_btn3z
             // 
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log_btn3z.ForeColor = System.Drawing.Color.DimGray;
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.log_btn3z.Location = new System.Drawing.Point(786, 62);
@@ -178,6 +179,7 @@
             // Save_btn
             // 
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.ForeColor = System.Drawing.Color.DimGray;
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Save_btn.Location = new System.Drawing.Point(786, 437);
@@ -204,6 +206,8 @@
             this.Name = "eng_adm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a engineer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.eng_adm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.eng_adm_FormClosed);
             this.Load += new System.EventHandler(this.eng_adm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.engineer_1BindingSource)).EndInit();
