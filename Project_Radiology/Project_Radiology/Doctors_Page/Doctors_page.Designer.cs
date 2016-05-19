@@ -39,7 +39,7 @@
             // 
             // log_btn1
             // 
-            this.log_btn1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log_btn1.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.log_btn1.ForeColor = System.Drawing.Color.DimGray;
             this.log_btn1.Image = ((System.Drawing.Image)(resources.GetObject("log_btn1.Image")));
             this.log_btn1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -53,7 +53,7 @@
             // 
             // newpatient_btn
             // 
-            this.newpatient_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.newpatient_btn.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.newpatient_btn.ForeColor = System.Drawing.Color.DimGray;
             this.newpatient_btn.Image = ((System.Drawing.Image)(resources.GetObject("newpatient_btn.Image")));
             this.newpatient_btn.Location = new System.Drawing.Point(388, 147);
@@ -66,7 +66,7 @@
             // 
             // databse_btn
             // 
-            this.databse_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.databse_btn.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.databse_btn.ForeColor = System.Drawing.Color.DimGray;
             this.databse_btn.Image = ((System.Drawing.Image)(resources.GetObject("databse_btn.Image")));
             this.databse_btn.Location = new System.Drawing.Point(388, 325);
@@ -79,7 +79,7 @@
             // 
             // createanalysis_btn
             // 
-            this.createanalysis_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.createanalysis_btn.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.createanalysis_btn.ForeColor = System.Drawing.Color.DimGray;
             this.createanalysis_btn.Image = ((System.Drawing.Image)(resources.GetObject("createanalysis_btn.Image")));
             this.createanalysis_btn.Location = new System.Drawing.Point(388, 268);
@@ -92,7 +92,7 @@
             // 
             // statistic_btn
             // 
-            this.statistic_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statistic_btn.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.statistic_btn.ForeColor = System.Drawing.Color.DimGray;
             this.statistic_btn.Image = ((System.Drawing.Image)(resources.GetObject("statistic_btn.Image")));
             this.statistic_btn.Location = new System.Drawing.Point(388, 384);
@@ -105,7 +105,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.DimGray;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(388, 207);
