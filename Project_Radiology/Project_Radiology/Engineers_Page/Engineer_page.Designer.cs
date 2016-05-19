@@ -50,9 +50,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(388, 224);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 37);
+            this.button1.Size = new System.Drawing.Size(160, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "Analysis";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,9 +62,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(388, 285);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 37);
+            this.button2.Size = new System.Drawing.Size(160, 36);
             this.button2.TabIndex = 3;
             this.button2.Text = "State of analysis";
             this.button2.UseVisualStyleBackColor = true;
@@ -83,6 +85,7 @@
             this.Name = "Engineer_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Engineer\'s page";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Engineer_page_FormClosing);
             this.ResumeLayout(false);
 
         }

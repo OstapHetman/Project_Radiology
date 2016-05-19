@@ -60,7 +60,7 @@
             this.back_btn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn2.Image = ((System.Drawing.Image)(resources.GetObject("back_btn2.Image")));
             this.back_btn2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn2.Location = new System.Drawing.Point(785, 62);
+            this.back_btn2.Location = new System.Drawing.Point(785, 58);
             this.back_btn2.Name = "back_btn2";
             this.back_btn2.Size = new System.Drawing.Size(85, 25);
             this.back_btn2.TabIndex = 2;
@@ -226,6 +226,7 @@
             this.Name = "Doctors_page_DATABASE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Database";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_DATABASE_FormClosing);
             this.Load += new System.EventHandler(this.Doctors_page_DATABASE_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

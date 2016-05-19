@@ -45,7 +45,7 @@
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3z.Location = new System.Drawing.Point(788, 60);
+            this.log_btn3z.Location = new System.Drawing.Point(788, 59);
             this.log_btn3z.Name = "log_btn3z";
             this.log_btn3z.Size = new System.Drawing.Size(85, 25);
             this.log_btn3z.TabIndex = 3;
@@ -70,9 +70,10 @@
             // grouped_btn
             // 
             this.grouped_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grouped_btn.Image = ((System.Drawing.Image)(resources.GetObject("grouped_btn.Image")));
             this.grouped_btn.Location = new System.Drawing.Point(394, 225);
             this.grouped_btn.Name = "grouped_btn";
-            this.grouped_btn.Size = new System.Drawing.Size(168, 37);
+            this.grouped_btn.Size = new System.Drawing.Size(160, 36);
             this.grouped_btn.TabIndex = 4;
             this.grouped_btn.Text = "Grouped by doctors";
             this.grouped_btn.UseVisualStyleBackColor = true;
@@ -81,9 +82,10 @@
             // groped_btn2
             // 
             this.groped_btn2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groped_btn2.Image = ((System.Drawing.Image)(resources.GetObject("groped_btn2.Image")));
             this.groped_btn2.Location = new System.Drawing.Point(394, 291);
             this.groped_btn2.Name = "groped_btn2";
-            this.groped_btn2.Size = new System.Drawing.Size(168, 37);
+            this.groped_btn2.Size = new System.Drawing.Size(160, 36);
             this.groped_btn2.TabIndex = 5;
             this.groped_btn2.Text = "Grouped by patients";
             this.groped_btn2.UseVisualStyleBackColor = true;
@@ -104,6 +106,7 @@
             this.Name = "statistic_eng";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Statistic";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.statistic_eng_FormClosing);
             this.Load += new System.EventHandler(this.statistic_eng_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

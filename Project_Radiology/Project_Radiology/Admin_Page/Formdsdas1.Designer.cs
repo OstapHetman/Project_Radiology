@@ -197,6 +197,7 @@
             this.Name = "Formdsdas1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View doctor\'s";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Formdsdas1_FormClosing);
             this.Load += new System.EventHandler(this.Formdsdas1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOCTORS_1BindingSource)).EndInit();

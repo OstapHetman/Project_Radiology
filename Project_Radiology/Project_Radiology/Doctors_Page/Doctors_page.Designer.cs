@@ -56,7 +56,7 @@
             this.newpatient_btn.Image = ((System.Drawing.Image)(resources.GetObject("newpatient_btn.Image")));
             this.newpatient_btn.Location = new System.Drawing.Point(388, 147);
             this.newpatient_btn.Name = "newpatient_btn";
-            this.newpatient_btn.Size = new System.Drawing.Size(189, 38);
+            this.newpatient_btn.Size = new System.Drawing.Size(160, 36);
             this.newpatient_btn.TabIndex = 1;
             this.newpatient_btn.Text = "New patient";
             this.newpatient_btn.UseVisualStyleBackColor = true;
@@ -65,9 +65,10 @@
             // databse_btn
             // 
             this.databse_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.databse_btn.Image = ((System.Drawing.Image)(resources.GetObject("databse_btn.Image")));
             this.databse_btn.Location = new System.Drawing.Point(388, 325);
             this.databse_btn.Name = "databse_btn";
-            this.databse_btn.Size = new System.Drawing.Size(189, 38);
+            this.databse_btn.Size = new System.Drawing.Size(160, 36);
             this.databse_btn.TabIndex = 2;
             this.databse_btn.Text = "View analysis";
             this.databse_btn.UseVisualStyleBackColor = true;
@@ -76,9 +77,10 @@
             // createanalysis_btn
             // 
             this.createanalysis_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.createanalysis_btn.Image = ((System.Drawing.Image)(resources.GetObject("createanalysis_btn.Image")));
             this.createanalysis_btn.Location = new System.Drawing.Point(388, 268);
             this.createanalysis_btn.Name = "createanalysis_btn";
-            this.createanalysis_btn.Size = new System.Drawing.Size(189, 38);
+            this.createanalysis_btn.Size = new System.Drawing.Size(160, 36);
             this.createanalysis_btn.TabIndex = 3;
             this.createanalysis_btn.Text = "Create analysis";
             this.createanalysis_btn.UseVisualStyleBackColor = true;
@@ -87,9 +89,10 @@
             // statistic_btn
             // 
             this.statistic_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statistic_btn.Image = ((System.Drawing.Image)(resources.GetObject("statistic_btn.Image")));
             this.statistic_btn.Location = new System.Drawing.Point(388, 384);
             this.statistic_btn.Name = "statistic_btn";
-            this.statistic_btn.Size = new System.Drawing.Size(189, 38);
+            this.statistic_btn.Size = new System.Drawing.Size(160, 36);
             this.statistic_btn.TabIndex = 4;
             this.statistic_btn.Text = "Statistic";
             this.statistic_btn.UseVisualStyleBackColor = true;
@@ -98,9 +101,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(388, 207);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 38);
+            this.button1.Size = new System.Drawing.Size(160, 36);
             this.button1.TabIndex = 5;
             this.button1.Text = "View patients";
             this.button1.UseVisualStyleBackColor = true;
@@ -123,6 +127,7 @@
             this.Name = "Doctors_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctro\'s page";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_FormClosing);
             this.Load += new System.EventHandler(this.Doctors_page_Load);
             this.ResumeLayout(false);
 

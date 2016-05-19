@@ -49,7 +49,7 @@
             this.log_btn3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3.Image")));
             this.log_btn3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3.Location = new System.Drawing.Point(793, 65);
+            this.log_btn3.Location = new System.Drawing.Point(787, 60);
             this.log_btn3.Name = "log_btn3";
             this.log_btn3.Size = new System.Drawing.Size(85, 25);
             this.log_btn3.TabIndex = 1;
@@ -60,6 +60,7 @@
             // adddoc_btn
             // 
             this.adddoc_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.adddoc_btn.Image = ((System.Drawing.Image)(resources.GetObject("adddoc_btn.Image")));
             this.adddoc_btn.Location = new System.Drawing.Point(396, 180);
             this.adddoc_btn.Name = "adddoc_btn";
             this.adddoc_btn.Size = new System.Drawing.Size(160, 36);
@@ -71,6 +72,7 @@
             // addengineer_btn
             // 
             this.addengineer_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addengineer_btn.Image = ((System.Drawing.Image)(resources.GetObject("addengineer_btn.Image")));
             this.addengineer_btn.Location = new System.Drawing.Point(396, 233);
             this.addengineer_btn.Name = "addengineer_btn";
             this.addengineer_btn.Size = new System.Drawing.Size(160, 36);
@@ -82,6 +84,7 @@
             // addlaborator_btn
             // 
             this.addlaborator_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addlaborator_btn.Image = ((System.Drawing.Image)(resources.GetObject("addlaborator_btn.Image")));
             this.addlaborator_btn.Location = new System.Drawing.Point(396, 286);
             this.addlaborator_btn.Name = "addlaborator_btn";
             this.addlaborator_btn.Size = new System.Drawing.Size(160, 36);
@@ -93,6 +96,7 @@
             // addhospital_btn
             // 
             this.addhospital_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addhospital_btn.Image = ((System.Drawing.Image)(resources.GetObject("addhospital_btn.Image")));
             this.addhospital_btn.Location = new System.Drawing.Point(396, 338);
             this.addhospital_btn.Name = "addhospital_btn";
             this.addhospital_btn.Size = new System.Drawing.Size(160, 36);
@@ -104,6 +108,7 @@
             // statistic_btn
             // 
             this.statistic_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statistic_btn.Image = ((System.Drawing.Image)(resources.GetObject("statistic_btn.Image")));
             this.statistic_btn.Location = new System.Drawing.Point(396, 393);
             this.statistic_btn.Name = "statistic_btn";
             this.statistic_btn.Size = new System.Drawing.Size(160, 36);
@@ -129,6 +134,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(396, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 36);
@@ -155,6 +161,8 @@
             this.Name = "Admin_pages";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin\'s page";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_pages_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_pages_FormClosed);
             this.Load += new System.EventHandler(this.Admin_pages_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOCTORS1BindingSource)).EndInit();

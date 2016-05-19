@@ -204,6 +204,8 @@
             this.Name = "eng_adm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a engineer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.eng_adm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.eng_adm_FormClosed);
             this.Load += new System.EventHandler(this.eng_adm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.engineer_1BindingSource)).EndInit();

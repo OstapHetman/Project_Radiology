@@ -77,5 +77,23 @@ namespace Project_Radiology
             this.engineer_1TableAdapter.Update(this.hospitalDataSet.Engineer_1);
             MessageBox.Show("Changes Saved");
         }
+
+        private void eng_adm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void eng_adm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
