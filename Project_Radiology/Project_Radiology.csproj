@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619AF4B7-2B44-4B68-A853-19F78491FA0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Radiology</RootNamespace>
+    <AssemblyName>Project_Radiology</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Page\add_hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\add_hospital.Designer.cs">
+      <DependentUpon>add_hospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\add_laboratory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\add_laboratory.Designer.cs">
+      <DependentUpon>add_laboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\add_engineer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\add_engineer.Designer.cs">
+      <DependentUpon>add_engineer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\add_doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\add_doctor.Designer.cs">
+      <DependentUpon>add_doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors_Page\add_patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors_Page\add_patient.Designer.cs">
+      <DependentUpon>add_patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\Admin_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\Admin_page.Designer.cs">
+      <DependentUpon>Admin_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DOCTORS_1.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Engineers_Page\Analysis_Engineer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engineers_Page\Analysis_Engineer.Designer.cs">
+      <DependentUpon>Analysis_Engineer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page.Designer.cs">
+      <DependentUpon>Doctors_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_DATABASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_DATABASE.Designer.cs">
+      <DependentUpon>Doctors_page_DATABASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_NEW PATIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_NEW PATIENT.Designer.cs">
+      <DependentUpon>Doctors_page_NEW PATIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_CREARE_ANALYSIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_CREARE_ANALYSIS.Designer.cs">
+      <DependentUpon>Doctors_page_CREARE_ANALYSIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_STATISTIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors_Page\Doctors_page_STATISTIC.Designer.cs">
+      <DependentUpon>Doctors_page_STATISTIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engineers_Page\Engineer_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engineers_Page\Engineer_page.Designer.cs">
+      <DependentUpon>Engineer_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\eng_adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\eng_adm.Designer.cs">
+      <DependentUpon>eng_adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\Formdsdas1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\Formdsdas1.Designer.cs">
+      <DependentUpon>Formdsdas1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\hosp_adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\hosp_adm.Designer.cs">
+      <DependentUpon>hosp_adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page\lab_adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\lab_adm.Designer.cs">
+      <DependentUpon>lab_adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engineer_1.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Engineers_Page\grouped_doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engineers_Page\grouped_doc.Designer.cs">
+      <DependentUpon>grouped_doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engineers_Page\grouped_pat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engineers_Page\grouped_pat.Designer.cs">
+      <DependentUpon>grouped_pat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login_pages\Login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_pages\Login_page.Designer.cs">
+      <DependentUpon>Login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin_Page\statis_adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page\statis_adm.Designer.cs">
+      <DependentUpon>statis_adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engineers_Page\statistic_eng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engineers_Page\statistic_eng.Designer.cs">
+      <DependentUpon>statistic_eng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Type_of_analysis.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Page\add_hospital.resx">
+      <DependentUpon>add_hospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\add_laboratory.resx">
+      <DependentUpon>add_laboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\add_engineer.resx">
+      <DependentUpon>add_engineer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\add_doctor.resx">
+      <DependentUpon>add_doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors_Page\add_patient.resx">
+      <DependentUpon>add_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\Admin_page.resx">
+      <DependentUpon>Admin_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\eng_adm.resx">
+      <DependentUpon>eng_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\hosp_adm.resx">
+      <DependentUpon>hosp_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\lab_adm.resx">
+      <DependentUpon>lab_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\statis_adm.resx">
+      <DependentUpon>statis_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engineers_Page\Analysis_Engineer.resx">
+      <DependentUpon>Analysis_Engineer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors_Page\Doctors_page.resx">
+      <DependentUpon>Doctors_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors_Page\Doctors_page_DATABASE.resx">
+      <DependentUpon>Doctors_page_DATABASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors_Page\Doctors_page_NEW PATIENT.resx">
+      <DependentUpon>Doctors_page_NEW PATIENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors_Page\Doctors_page_CREARE_ANALYSIS.resx">
+      <DependentUpon>Doctors_page_CREARE_ANALYSIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors_Page\Doctors_page_STATISTIC.resx">
+      <DependentUpon>Doctors_page_STATISTIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engineers_Page\Engineer_page.resx">
+      <DependentUpon>Engineer_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page\Formdsdas1.resx">
+      <DependentUpon>Formdsdas1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engineers_Page\statistic_eng.resx">
+      <DependentUpon>statistic_eng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engineers_Page\grouped_doc.resx">
+      <DependentUpon>grouped_doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engineers_Page\grouped_pat.resx">
+      <DependentUpon>grouped_pat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_pages\Login_page.resx">
+      <DependentUpon>Login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="Database.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Database.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Database.edmx.diagram">
+      <DependentUpon>Database.edmx</DependentUpon>
+    </None>
+    <None Include="HospitalDataSet.xsc">
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalDataSet.xss">
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Database.edmx</DependentUpon>
+      <LastGenOutput>Database.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Database.edmx</DependentUpon>
+      <LastGenOutput>Database.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
