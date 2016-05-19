@@ -195,7 +195,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Doctors_page_NEW_PATIENT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "New patient";
+            this.Text = "Patient\'s";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_NEW_PATIENT_FormClosing);
             this.Load += new System.EventHandler(this.Doctors_page_NEW_PATIENT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
