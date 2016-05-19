@@ -67,18 +67,5 @@ namespace Project_Radiology
             this.analysisTableAdapter.Update(this.hospitalDataSet.Analysis);
             MessageBox.Show("Changes Saved");
         }
-
-        private void Doctors_page_DATABASE_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
-            if (dialog == DialogResult.Yes)
-            {
-                Application.ExitThread();
-            }
-            else if (dialog == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
     }
 }

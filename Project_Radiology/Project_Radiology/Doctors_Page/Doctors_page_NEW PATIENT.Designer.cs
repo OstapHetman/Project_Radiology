@@ -55,7 +55,7 @@
             this.back_btn3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn3.Image = ((System.Drawing.Image)(resources.GetObject("back_btn3.Image")));
             this.back_btn3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn3.Location = new System.Drawing.Point(786, 61);
+            this.back_btn3.Location = new System.Drawing.Point(792, 61);
             this.back_btn3.Name = "back_btn3";
             this.back_btn3.Size = new System.Drawing.Size(85, 25);
             this.back_btn3.TabIndex = 2;
@@ -195,8 +195,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Doctors_page_NEW_PATIENT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Patient\'s";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_NEW_PATIENT_FormClosing);
+            this.Text = "New patient";
             this.Load += new System.EventHandler(this.Doctors_page_NEW_PATIENT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();

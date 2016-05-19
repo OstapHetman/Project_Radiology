@@ -202,7 +202,6 @@
             this.Name = "Doctors_page_CREARE_ANALYSIS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create analysis";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_CREARE_ANALYSIS_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

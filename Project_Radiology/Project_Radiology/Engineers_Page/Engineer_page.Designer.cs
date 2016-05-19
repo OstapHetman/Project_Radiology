@@ -85,7 +85,6 @@
             this.Name = "Engineer_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Engineer\'s page";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Engineer_page_FormClosing);
             this.ResumeLayout(false);
 
         }

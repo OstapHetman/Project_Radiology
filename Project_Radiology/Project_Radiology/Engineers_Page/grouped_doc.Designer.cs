@@ -157,7 +157,6 @@
             this.Name = "grouped_doc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grouped by doctors";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.grouped_doc_FormClosing);
             this.Load += new System.EventHandler(this.grouped_doc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

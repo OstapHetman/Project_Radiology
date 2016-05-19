@@ -141,18 +141,5 @@ namespace Project_Radiology
         {
             this.dataGridViewTextBoxColumn3.Items.AddRange(new object[] {"In process", "Done", "Checked"});
         }
-
-        private void Analysis_Engineer_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
-            if (dialog == DialogResult.Yes)
-            {
-                Application.ExitThread();
-            }
-            else if (dialog == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
     }
 }

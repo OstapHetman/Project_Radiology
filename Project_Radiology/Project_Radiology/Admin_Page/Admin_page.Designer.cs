@@ -49,7 +49,7 @@
             this.log_btn3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3.Image")));
             this.log_btn3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3.Location = new System.Drawing.Point(787, 60);
+            this.log_btn3.Location = new System.Drawing.Point(793, 65);
             this.log_btn3.Name = "log_btn3";
             this.log_btn3.Size = new System.Drawing.Size(85, 25);
             this.log_btn3.TabIndex = 1;
@@ -161,8 +161,6 @@
             this.Name = "Admin_pages";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin\'s page";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_pages_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_pages_FormClosed);
             this.Load += new System.EventHandler(this.Admin_pages_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dOCTORS1BindingSource)).EndInit();

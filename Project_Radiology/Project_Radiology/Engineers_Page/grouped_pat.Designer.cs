@@ -51,7 +51,7 @@
             this.back_btn122.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn122.Image = ((System.Drawing.Image)(resources.GetObject("back_btn122.Image")));
             this.back_btn122.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn122.Location = new System.Drawing.Point(786, 58);
+            this.back_btn122.Location = new System.Drawing.Point(788, 60);
             this.back_btn122.Name = "back_btn122";
             this.back_btn122.Size = new System.Drawing.Size(85, 25);
             this.back_btn122.TabIndex = 3;
@@ -157,7 +157,6 @@
             this.Name = "grouped_pat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grouped by patients";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.grouped_pat_FormClosing);
             this.Load += new System.EventHandler(this.grouped_pat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();

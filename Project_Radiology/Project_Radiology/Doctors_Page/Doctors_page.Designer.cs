@@ -126,8 +126,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Doctors_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Doctor\'s page";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctors_page_FormClosing);
+            this.Text = "Doctro\'s page";
             this.Load += new System.EventHandler(this.Doctors_page_Load);
             this.ResumeLayout(false);
 

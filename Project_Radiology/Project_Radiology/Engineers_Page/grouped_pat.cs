@@ -76,18 +76,5 @@ namespace Project_Radiology
             analysisDataGridView.DataSource = dt;
             conn.Close();
         }
-
-        private void grouped_pat_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
-            if (dialog == DialogResult.Yes)
-            {
-                Application.ExitThread();
-            }
-            else if (dialog == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
     }
 }

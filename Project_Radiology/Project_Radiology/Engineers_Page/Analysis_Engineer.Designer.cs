@@ -260,7 +260,6 @@
             this.Name = "Analysis_Engineer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Analysis";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Analysis_Engineer_FormClosing);
             this.Load += new System.EventHandler(this.Analysis_Engineer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).EndInit();
