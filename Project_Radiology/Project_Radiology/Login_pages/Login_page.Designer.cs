@@ -44,7 +44,7 @@
             // login_btn
             // 
             this.login_btn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.login_btn.Location = new System.Drawing.Point(366, 207);
+            this.login_btn.Location = new System.Drawing.Point(352, 205);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(83, 28);
             this.login_btn.TabIndex = 0;
@@ -65,7 +65,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(289, 173);
+            this.textBox1.Location = new System.Drawing.Point(275, 171);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 25);
             this.textBox1.TabIndex = 4;
@@ -74,7 +74,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(289, 141);
+            this.textBox2.Location = new System.Drawing.Point(275, 139);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(160, 25);
             this.textBox2.TabIndex = 5;
@@ -82,8 +82,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(213, 141);
+            this.label1.BackColor = System.Drawing.Color.LightBlue;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(199, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 17);
             this.label1.TabIndex = 6;
@@ -92,8 +93,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(219, 176);
+            this.label2.BackColor = System.Drawing.Color.LightBlue;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(205, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 7;
@@ -124,8 +126,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.LightBlue;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(308, 108);
+            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
+            this.label3.Location = new System.Drawing.Point(294, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 30);
             this.label3.TabIndex = 10;
@@ -133,12 +137,13 @@
             // 
             // linkLabel1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.LightGray;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.LightSkyBlue;
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.LightBlue;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.DarkGray;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.Location = new System.Drawing.Point(320, 238);
+            this.linkLabel1.Location = new System.Drawing.Point(306, 236);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(129, 13);
             this.linkLabel1.TabIndex = 11;

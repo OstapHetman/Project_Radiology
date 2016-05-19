@@ -29,7 +29,7 @@ namespace Project_Radiology
         {
             SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO Analysis(ID, [Type of analysis], [Date created], Author, Patient_SSN) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + dateTimePicker1.Value.ToString("MM/dd/yyyy") + "','" + textBox4.Text + "','" + textBox5.Text + "') ", conn);
+            SqlCommand cmd = new SqlCommand("INSERT INTO Analysis(ID, [Type of analysis],[State of analysis],  [Date created], Author, Patient_SSN) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + dateTimePicker1.Value.ToString("MM/dd/yyyy") + "','" + textBox4.Text + "','" + textBox5.Text + "') ", conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Changes Saved");

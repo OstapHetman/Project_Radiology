@@ -46,6 +46,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Save_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.engineer_1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.engineer_1DataGridView)).BeginInit();
@@ -56,9 +57,9 @@
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3z.Location = new System.Drawing.Point(795, 62);
+            this.log_btn3z.Location = new System.Drawing.Point(786, 62);
             this.log_btn3z.Name = "log_btn3z";
-            this.log_btn3z.Size = new System.Drawing.Size(75, 25);
+            this.log_btn3z.Size = new System.Drawing.Size(84, 20);
             this.log_btn3z.TabIndex = 3;
             this.log_btn3z.Text = "Back";
             this.log_btn3z.UseVisualStyleBackColor = true;
@@ -96,6 +97,8 @@
             // engineer_1DataGridView
             // 
             this.engineer_1DataGridView.AutoGenerateColumns = false;
+            this.engineer_1DataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.engineer_1DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.engineer_1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.engineer_1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -106,9 +109,10 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.engineer_1DataGridView.DataSource = this.engineer_1BindingSource;
+            this.engineer_1DataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.engineer_1DataGridView.Location = new System.Drawing.Point(91, 120);
             this.engineer_1DataGridView.Name = "engineer_1DataGridView";
-            this.engineer_1DataGridView.Size = new System.Drawing.Size(745, 311);
+            this.engineer_1DataGridView.Size = new System.Drawing.Size(758, 311);
             this.engineer_1DataGridView.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -155,9 +159,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(795, 437);
+            this.button1.Location = new System.Drawing.Point(786, 437);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 11;
             this.button1.Text = "Add/Delete";
             this.button1.UseVisualStyleBackColor = true;
@@ -174,11 +178,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(68, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(18, 15);
             this.label1.TabIndex = 20;
             this.label1.Text = "ID";
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
+            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Save_btn.Location = new System.Drawing.Point(696, 437);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(84, 23);
+            this.Save_btn.TabIndex = 29;
+            this.Save_btn.Text = "Save changes";
+            this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // eng_adm
             // 
@@ -187,6 +206,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
+            this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -223,5 +243,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Save_btn;
     }
 }

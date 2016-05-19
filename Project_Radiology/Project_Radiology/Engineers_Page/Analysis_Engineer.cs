@@ -15,11 +15,12 @@ namespace Project_Radiology
     public partial class Analysis_Engineer : Form
     {
         //SqlDataAdapter sda;
-        //SqlCommandBuilder scb;
-        //DataTable dt;
+        SqlCommandBuilder scb;
+        DataTable dt;
 
         HospitalEntities we;
         SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
+
         public Analysis_Engineer()
         {
             InitializeComponent();
@@ -111,23 +112,23 @@ namespace Project_Radiology
 
         private void Save_btn_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO Analysis([State of analysis]) VALUES ('" + dataGridViewTextBoxColumn3 + "') ", conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            this.Validate();
+
+            this.analysisBindingSource.EndEdit();
+            this.analysisTableAdapter.Update(this.hospitalDataSet.Analysis);
+            this.diagnosisBindingSource.EndEdit();
+            this.diagnosisTableAdapter.Update(this.hospitalDataSet.Diagnosis);
+            this.patientBindingSource.EndEdit();
+            this.patientTableAdapter.Update(this.hospitalDataSet.Patient);
+
             MessageBox.Show("Changes Saved");
         }
 
-        private void btn_del6_Click(object sender, EventArgs e)
+       
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-        //    SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-        //    conn.Open();
-        //    SqlCommand cmd = new SqlCommand("DELETE FROM Analysis VALUES ('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "') ", conn);
-        //    cmd.ExecuteNonQuery();
-        //    conn.Close();
-        //    this.Hide();
-        //    MessageBox.Show("Changes Saved");
+
         }
     }
 }

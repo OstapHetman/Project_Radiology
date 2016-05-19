@@ -91,15 +91,18 @@
             // analysisDataGridView
             // 
             this.analysisDataGridView.AutoGenerateColumns = false;
+            this.analysisDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.analysisDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.analysisDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.analysisDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.analysisDataGridView.DataSource = this.analysisBindingSource;
+            this.analysisDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.analysisDataGridView.Location = new System.Drawing.Point(324, 148);
             this.analysisDataGridView.Name = "analysisDataGridView";
-            this.analysisDataGridView.Size = new System.Drawing.Size(345, 220);
+            this.analysisDataGridView.Size = new System.Drawing.Size(353, 220);
             this.analysisDataGridView.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn5
@@ -123,10 +126,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(60, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(44, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "Author";
             // 

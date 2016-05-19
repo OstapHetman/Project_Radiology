@@ -44,6 +44,7 @@
             this.add_btn4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Save_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.laboratoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.laboratoryDataGridView)).BeginInit();
@@ -54,9 +55,9 @@
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3z.Location = new System.Drawing.Point(796, 62);
+            this.log_btn3z.Location = new System.Drawing.Point(787, 62);
             this.log_btn3z.Name = "log_btn3z";
-            this.log_btn3z.Size = new System.Drawing.Size(75, 25);
+            this.log_btn3z.Size = new System.Drawing.Size(84, 21);
             this.log_btn3z.TabIndex = 3;
             this.log_btn3z.Text = "Back";
             this.log_btn3z.UseVisualStyleBackColor = true;
@@ -94,6 +95,8 @@
             // laboratoryDataGridView
             // 
             this.laboratoryDataGridView.AutoGenerateColumns = false;
+            this.laboratoryDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.laboratoryDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.laboratoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.laboratoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -102,9 +105,10 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.laboratoryDataGridView.DataSource = this.laboratoryBindingSource;
+            this.laboratoryDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.laboratoryDataGridView.Location = new System.Drawing.Point(197, 120);
             this.laboratoryDataGridView.Name = "laboratoryDataGridView";
-            this.laboratoryDataGridView.Size = new System.Drawing.Size(546, 309);
+            this.laboratoryDataGridView.Size = new System.Drawing.Size(564, 309);
             this.laboratoryDataGridView.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -142,9 +146,9 @@
             this.add_btn4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_btn4.Image = ((System.Drawing.Image)(resources.GetObject("add_btn4.Image")));
             this.add_btn4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.add_btn4.Location = new System.Drawing.Point(796, 431);
+            this.add_btn4.Location = new System.Drawing.Point(787, 431);
             this.add_btn4.Name = "add_btn4";
-            this.add_btn4.Size = new System.Drawing.Size(75, 25);
+            this.add_btn4.Size = new System.Drawing.Size(84, 23);
             this.add_btn4.TabIndex = 5;
             this.add_btn4.Text = "Add/Delete";
             this.add_btn4.UseVisualStyleBackColor = true;
@@ -161,11 +165,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(60, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(75, 15);
             this.label1.TabIndex = 22;
             this.label1.Text = "LaboratoryID";
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
+            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Save_btn.Location = new System.Drawing.Point(694, 431);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(84, 23);
+            this.Save_btn.TabIndex = 29;
+            this.Save_btn.Text = "Save changes";
+            this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // lab_adm
             // 
@@ -174,6 +193,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
+            this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.add_btn4);
@@ -208,5 +228,6 @@
         private System.Windows.Forms.Button add_btn4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Save_btn;
     }
 }

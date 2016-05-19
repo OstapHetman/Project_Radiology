@@ -43,6 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Save_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataGridView)).BeginInit();
@@ -53,9 +54,9 @@
             this.log_btn3z.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log_btn3z.Image = ((System.Drawing.Image)(resources.GetObject("log_btn3z.Image")));
             this.log_btn3z.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.log_btn3z.Location = new System.Drawing.Point(796, 62);
+            this.log_btn3z.Location = new System.Drawing.Point(787, 62);
             this.log_btn3z.Name = "log_btn3z";
-            this.log_btn3z.Size = new System.Drawing.Size(75, 25);
+            this.log_btn3z.Size = new System.Drawing.Size(84, 21);
             this.log_btn3z.TabIndex = 3;
             this.log_btn3z.Text = "Back";
             this.log_btn3z.UseVisualStyleBackColor = true;
@@ -93,6 +94,8 @@
             // hospitalDataGridView
             // 
             this.hospitalDataGridView.AutoGenerateColumns = false;
+            this.hospitalDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.hospitalDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hospitalDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hospitalDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -100,9 +103,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.hospitalDataGridView.DataSource = this.hospitalBindingSource;
+            this.hospitalDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.hospitalDataGridView.Location = new System.Drawing.Point(245, 127);
             this.hospitalDataGridView.Name = "hospitalDataGridView";
-            this.hospitalDataGridView.Size = new System.Drawing.Size(445, 310);
+            this.hospitalDataGridView.Size = new System.Drawing.Size(470, 310);
             this.hospitalDataGridView.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -134,9 +138,9 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(796, 434);
+            this.button1.Location = new System.Drawing.Point(787, 434);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
+            this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 5;
             this.button1.Text = "Add/Delete";
             this.button1.UseVisualStyleBackColor = true;
@@ -153,11 +157,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(60, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(64, 15);
             this.label1.TabIndex = 24;
             this.label1.Text = "HospitalID";
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
+            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Save_btn.Location = new System.Drawing.Point(690, 434);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(84, 23);
+            this.Save_btn.TabIndex = 29;
+            this.Save_btn.Text = "Save changes";
+            this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // hosp_adm
             // 
@@ -166,6 +185,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
+            this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -199,5 +219,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Save_btn;
     }
 }

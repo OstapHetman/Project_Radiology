@@ -66,5 +66,13 @@ namespace Project_Radiology
             engineer_1BindingSource.DataSource = dt;
             conn.Close();
         }
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.engineer_1BindingSource.EndEdit();
+            this.engineer_1TableAdapter.Update(this.hospitalDataSet.Engineer_1);
+            MessageBox.Show("Changes Saved");
+        }
     }
 }

@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.add_pat_btn = new System.Windows.Forms.Button();
+            this.Save_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).BeginInit();
@@ -55,9 +56,9 @@
             this.back_btn3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn3.Image = ((System.Drawing.Image)(resources.GetObject("back_btn3.Image")));
             this.back_btn3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn3.Location = new System.Drawing.Point(796, 61);
+            this.back_btn3.Location = new System.Drawing.Point(792, 61);
             this.back_btn3.Name = "back_btn3";
-            this.back_btn3.Size = new System.Drawing.Size(75, 25);
+            this.back_btn3.Size = new System.Drawing.Size(79, 20);
             this.back_btn3.TabIndex = 2;
             this.back_btn3.Text = "Back";
             this.back_btn3.UseVisualStyleBackColor = true;
@@ -115,8 +116,8 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.patientDataGridView.DataSource = this.patientBindingSource;
-            this.patientDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.patientDataGridView.Location = new System.Drawing.Point(252, 142);
+            this.patientDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
+            this.patientDataGridView.Location = new System.Drawing.Point(240, 140);
             this.patientDataGridView.Name = "patientDataGridView";
             this.patientDataGridView.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.patientDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
@@ -150,9 +151,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(66, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "SSN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -168,13 +171,26 @@
             // add_pat_btn
             // 
             this.add_pat_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.add_pat_btn.Location = new System.Drawing.Point(796, 438);
+            this.add_pat_btn.Location = new System.Drawing.Point(792, 438);
             this.add_pat_btn.Name = "add_pat_btn";
-            this.add_pat_btn.Size = new System.Drawing.Size(75, 23);
+            this.add_pat_btn.Size = new System.Drawing.Size(79, 23);
             this.add_pat_btn.TabIndex = 16;
             this.add_pat_btn.Text = "Add/Delete";
             this.add_pat_btn.UseVisualStyleBackColor = true;
             this.add_pat_btn.Click += new System.EventHandler(this.add_pat_btn_Click);
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
+            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Save_btn.Location = new System.Drawing.Point(705, 438);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(85, 23);
+            this.Save_btn.TabIndex = 27;
+            this.Save_btn.Text = "Save changes";
+            this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // Doctors_page_NEW_PATIENT
             // 
@@ -183,6 +199,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
+            this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.add_pat_btn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -216,5 +233,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button add_pat_btn;
+        private System.Windows.Forms.Button Save_btn;
     }
 }

@@ -97,5 +97,13 @@ namespace Project_Radiology
             add_patient add = new add_patient();
             add.Show();
         }
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.patientBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.hospitalDataSet);
+            MessageBox.Show("Changes Saved");
+        }
     }
 }

@@ -59,5 +59,13 @@ namespace Project_Radiology
             analysisBindingSource2.DataSource = dt;
             conn.Close();
         }
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.analysisBindingSource.EndEdit();
+            this.analysisTableAdapter.Update(this.hospitalDataSet.Analysis);
+            MessageBox.Show("Changes Saved");
+        }
     }
 }

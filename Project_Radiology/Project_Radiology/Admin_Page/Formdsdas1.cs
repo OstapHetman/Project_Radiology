@@ -73,5 +73,13 @@ namespace Project_Radiology
             dOCTORS_1BindingSource.DataSource = dt;
             conn.Close();
         }
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.dOCTORS_1BindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.hospitalDataSet);
+            MessageBox.Show("Changes Saved");
+        }
     }
 }

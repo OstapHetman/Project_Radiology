@@ -91,7 +91,7 @@
             // analysisDataGridView
             // 
             this.analysisDataGridView.AutoGenerateColumns = false;
-            this.analysisDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.analysisDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.analysisDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.analysisDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.analysisDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -99,6 +99,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.analysisDataGridView.DataSource = this.analysisBindingSource;
+            this.analysisDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.analysisDataGridView.Location = new System.Drawing.Point(316, 157);
             this.analysisDataGridView.Name = "analysisDataGridView";
             this.analysisDataGridView.Size = new System.Drawing.Size(344, 220);
@@ -125,10 +126,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(59, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(28, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "SSN";
             // 
@@ -144,6 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);

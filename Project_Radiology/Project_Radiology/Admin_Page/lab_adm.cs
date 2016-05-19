@@ -72,5 +72,13 @@ namespace Project_Radiology
             laboratoryBindingSource.DataSource = dt;
             conn.Close();
         }
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.laboratoryBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.hospitalDataSet);
+            MessageBox.Show("Changes Saved");
+        }
     }
 }

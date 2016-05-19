@@ -54,7 +54,7 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKTypeOfAnalysisAnalysisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Save_btn = new System.Windows.Forms.Button();
-            this.btn_del6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosisBindingSource)).BeginInit();
@@ -71,9 +71,9 @@
             this.back_btn12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_btn12.Image = ((System.Drawing.Image)(resources.GetObject("back_btn12.Image")));
             this.back_btn12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.back_btn12.Location = new System.Drawing.Point(789, 63);
+            this.back_btn12.Location = new System.Drawing.Point(779, 63);
             this.back_btn12.Name = "back_btn12";
-            this.back_btn12.Size = new System.Drawing.Size(75, 25);
+            this.back_btn12.Size = new System.Drawing.Size(85, 25);
             this.back_btn12.TabIndex = 2;
             this.back_btn12.Text = "Back";
             this.back_btn12.UseVisualStyleBackColor = true;
@@ -133,7 +133,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 72);
+            this.textBox1.Location = new System.Drawing.Point(148, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 7;
@@ -142,9 +142,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 75);
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(58, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(75, 15);
             this.label1.TabIndex = 8;
             this.label1.Text = "LaboratoryID";
             // 
@@ -160,6 +162,8 @@
             // analysisDataGridView
             // 
             this.analysisDataGridView.AutoGenerateColumns = false;
+            this.analysisDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.analysisDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.analysisDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.analysisDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -169,9 +173,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.analysisDataGridView.DataSource = this.analysisBindingSource1;
+            this.analysisDataGridView.GridColor = System.Drawing.SystemColors.Highlight;
             this.analysisDataGridView.Location = new System.Drawing.Point(139, 154);
             this.analysisDataGridView.Name = "analysisDataGridView";
-            this.analysisDataGridView.Size = new System.Drawing.Size(644, 277);
+            this.analysisDataGridView.Size = new System.Drawing.Size(652, 277);
             this.analysisDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -231,23 +236,26 @@
             this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
             this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Save_btn.Location = new System.Drawing.Point(789, 436);
+            this.Save_btn.Location = new System.Drawing.Point(779, 437);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(75, 25);
+            this.Save_btn.Size = new System.Drawing.Size(85, 25);
             this.Save_btn.TabIndex = 10;
-            this.Save_btn.Text = "Save";
+            this.Save_btn.Text = "Save changes";
             this.Save_btn.UseVisualStyleBackColor = true;
             this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
-            // btn_del6
+            // button1
             // 
-            this.btn_del6.Location = new System.Drawing.Point(708, 436);
-            this.btn_del6.Name = "btn_del6";
-            this.btn_del6.Size = new System.Drawing.Size(75, 23);
-            this.btn_del6.TabIndex = 18;
-            this.btn_del6.Text = "Delete";
-            this.btn_del6.UseVisualStyleBackColor = true;
-            this.btn_del6.Click += new System.EventHandler(this.btn_del6_Click);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(688, 437);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 25);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Delete";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Analysis_Engineer
             // 
@@ -256,7 +264,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
-            this.Controls.Add(this.btn_del6);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.analysisDataGridView);
             this.Controls.Add(this.label1);
@@ -307,6 +315,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.Button btn_del6;
+        private System.Windows.Forms.Button button1;
     }
 }
