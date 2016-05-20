@@ -28,17 +28,33 @@ namespace Project_Radiology
             back2.Show();
         }
 
-      
+        private void analysisBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.analysisBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.hospitalDataSet);
+
+        }
 
         private void Doctors_page_DATABASE_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "hospitalDataSet1.Analysis". При необходимости она может быть перемещена или удалена.
-            this.analysisTableAdapter.Fill(this.hospitalDataSet1.Analysis);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "hospitalDataSet1.Analysis". При необходимости она может быть перемещена или удалена.
-          
+            notifyIcon2.Text = "Healthcare - Radiology";
+            notifyIcon2.BalloonTipText = "To make a diagnosis after receving results!";
+            notifyIcon2.BalloonTipTitle = "REMINDER";
+            notifyIcon2.Icon = SystemIcons.Application;
+            notifyIcon2.ShowBalloonTip(1000);
+
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "hospitalDataSet.Analysis". При необходимости она может быть перемещена или удалена.
+            this.analysisTableAdapter.Fill(this.hospitalDataSet.Analysis);
+            hos = new HospitalEntities();
             analysisBindingSource.DataSource = hos.Analysis;
 
 
+
+        }
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
+        {
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -51,7 +67,7 @@ namespace Project_Radiology
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
-            analysisBindingSource.DataSource = dt;
+            analysisBindingSource2.DataSource = dt;
             conn.Close();
         }
 
@@ -59,9 +75,9 @@ namespace Project_Radiology
         {
             this.Validate();
             this.analysisBindingSource.EndEdit();
-            this.analysisTableAdapter.Update(this.hospitalDataSet1.Analysis);
+            this.analysisTableAdapter.Update(this.hospitalDataSet.Analysis);
             MessageBox.Show("Changes Saved");
-        } 
+        }
 
         private void Doctors_page_DATABASE_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -76,12 +92,42 @@ namespace Project_Radiology
             }
         }
 
-        private void analysisBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.analysisBindingSource.EndEdit();
-            this.tableAdapterManager1.UpdateAll(this.hospitalDataSet1);
-
+            this.Hide();
+            Patient_Diagnosis pp = new Patient_Diagnosis();
+            pp.Show();
         }
+
+        private void Doctors_page_DATABASE_MouseClick(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void analysisDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            notifyIcon2.Text = "Healthcare - Radiology";
+            notifyIcon2.BalloonTipText = "To make a diagnosis after receving results!";
+            notifyIcon2.BalloonTipTitle = "REMINDER";
+            notifyIcon2.Icon = SystemIcons.Application;
+            notifyIcon2.ShowBalloonTip(1000);
+        }
+
+        private void Doctors_page_DATABASE_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+          
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void notifyIcon2_MouseClick(object sender, MouseEventArgs e)
+        {
+          
+        }
+
+       
     }
 }

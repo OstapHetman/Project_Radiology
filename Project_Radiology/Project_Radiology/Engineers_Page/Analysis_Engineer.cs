@@ -139,7 +139,7 @@ namespace Project_Radiology
 
         private void analysisDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.dataGridViewTextBoxColumn3.Items.AddRange(new object[] {"In process", "Done", "Checked"});
+           // this.dataGridViewTextBoxColumn3.Items.AddRange(new object[] {"In process", "Done", "Checked"});
         }
 
         private void Analysis_Engineer_FormClosing(object sender, FormClosingEventArgs e)

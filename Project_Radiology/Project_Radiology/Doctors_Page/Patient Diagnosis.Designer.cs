@@ -39,10 +39,10 @@
             this.diagnosisTableAdapter = new Project_Radiology.HospitalDataSetTableAdapters.DiagnosisTableAdapter();
             this.tableAdapterManager = new Project_Radiology.HospitalDataSetTableAdapters.TableAdapterManager();
             this.diagnosisDataGridView = new System.Windows.Forms.DataGridView();
-            this.Save_btn = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Save_btn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
@@ -131,21 +131,6 @@
             this.diagnosisDataGridView.Size = new System.Drawing.Size(462, 220);
             this.diagnosisDataGridView.TabIndex = 4;
             // 
-            // Save_btn
-            // 
-            this.Save_btn.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Save_btn.ForeColor = System.Drawing.Color.DimGray;
-            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
-            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Save_btn.Location = new System.Drawing.Point(786, 438);
-            this.Save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(85, 25);
-            this.Save_btn.TabIndex = 27;
-            this.Save_btn.Text = "Save changes";
-            this.Save_btn.UseVisualStyleBackColor = true;
-            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
@@ -166,6 +151,21 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "AnalysisID";
             this.dataGridViewTextBoxColumn3.HeaderText = "Patient_SSN";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Save_btn.ForeColor = System.Drawing.Color.DimGray;
+            this.Save_btn.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.Image")));
+            this.Save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Save_btn.Location = new System.Drawing.Point(786, 438);
+            this.Save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(85, 25);
+            this.Save_btn.TabIndex = 27;
+            this.Save_btn.Text = "Save changes";
+            this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // textBox1
             // 
@@ -206,7 +206,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Patient_Diagnosis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Patient_Diagnosis";
+            this.Text = "Patient diagnosis";
             this.Load += new System.EventHandler(this.Patient_Diagnosis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosisBindingSource)).EndInit();
