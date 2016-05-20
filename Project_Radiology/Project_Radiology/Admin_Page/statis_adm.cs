@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Radiology
 {
     public partial class statis_adm : Form
     {
+        SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
+        SqlDataAdapter sda;
+        SqlCommandBuilder scb;
+        DataTable dt;
+
         public statis_adm()
         {
             InitializeComponent();
@@ -36,5 +42,16 @@ namespace Project_Radiology
                 e.Cancel = true;
             }
         }
+
+       
+
+        private void statis_adm_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "hospitalDataSet.Analysis". При необходимости она может быть перемещена или удалена.
+            this.analysisTableAdapter.Fill(this.hospitalDataSet.Analysis);
+
+        }
+
+       
     }
 }
