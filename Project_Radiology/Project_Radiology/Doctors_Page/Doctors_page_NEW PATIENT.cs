@@ -51,7 +51,7 @@ namespace Project_Radiology
             DataTable dta = new DataTable();
             SqlDataAdapter SD = new SqlDataAdapter("SELECT * FROM Patient where SSN = "+ textBox1.Text , conn);
             SD.Fill(dta);
-            patientDataGridView.DataSource = dta;
+            patientDataGridView1.DataSource = dta;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Project_Radiology
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
-            patientDataGridView.DataSource = dt;
+            patientDataGridView1.DataSource = dt;
             conn.Close();
         }
 
@@ -79,7 +79,7 @@ namespace Project_Radiology
             System.Data.DataTable dt = new System.Data.DataTable();
             System.Data.SqlClient.SqlDataAdapter SDA = new System.Data.SqlClient.SqlDataAdapter("SELECT * FROM Patient ", conn);
             SDA.Fill(dt);
-            patientDataGridView.DataSource = dt;
+            patientDataGridView1.DataSource = dt;
         }
 
         //private void button1_Click_1(object sender, EventArgs e)
