@@ -207,6 +207,7 @@
             this.Name = "Patient_Diagnosis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient diagnosis";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Patient_Diagnosis_FormClosing);
             this.Load += new System.EventHandler(this.Patient_Diagnosis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosisBindingSource)).EndInit();

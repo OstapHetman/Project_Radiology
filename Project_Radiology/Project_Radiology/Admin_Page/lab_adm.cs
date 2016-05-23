@@ -29,8 +29,6 @@ namespace Project_Radiology
             this.Hide();
             view_items www = new view_items();
             www.Show();
-
-
         }
 
         private void laboratoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -47,10 +45,6 @@ namespace Project_Radiology
             this.laboratoryTableAdapter.Fill(this.hospitalDataSet.Laboratory);
             lab = new HospitalEntities();
             laboratoryBindingSource.DataSource = lab.Laboratory;
-
-
-                 
-
         }
 
         private void add_btn4_Click(object sender, EventArgs e)
@@ -58,7 +52,6 @@ namespace Project_Radiology
             add_laboratory add4 = new add_laboratory();
             add4.Show();
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             conn.Open();
@@ -72,7 +65,6 @@ namespace Project_Radiology
             laboratoryBindingSource.DataSource = dt;
             conn.Close();
         }
-
         private void Save_btn_Click(object sender, EventArgs e)
         {
             this.Validate();

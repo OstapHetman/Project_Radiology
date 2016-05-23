@@ -81,17 +81,6 @@ namespace Project_Radiology
             SDA.Fill(dt);
             patientDataGridView1.DataSource = dt;
         }
-
-        //private void button1_Click_1(object sender, EventArgs e)
-        //{
-        //    SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-        //    conn.Open();
-        //    SqlCommand cmd = new SqlCommand("INSERT INTO Patient(SSN, FirstName, LastName, DocrotsID) VALUES ('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "') ", conn);
-        //    cmd.ExecuteNonQuery();
-        //    conn.Close();
-        //    MessageBox.Show("Changes Saved");
-        //}
-
         private void add_pat_btn_Click(object sender, EventArgs e)
         {
             add_patient add = new add_patient();

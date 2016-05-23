@@ -135,9 +135,9 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(36, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 15);
+            this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 27;
-            this.label1.Text = "ID";
+            this.label1.Text = "Engineer\'sID";
             // 
             // button1
             // 

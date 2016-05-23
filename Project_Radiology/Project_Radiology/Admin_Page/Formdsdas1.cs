@@ -43,17 +43,6 @@ namespace Project_Radiology
             dOCTORS_1BindingSource.DataSource = doc.DOCTORS_1;
 
         }
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-        //    conn.Open();
-        //    SqlCommand cmd = new SqlCommand("INSERT INTO DOCTORS_1(ID, FirstName, LastName, HospitalID, Login, Password) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "') ", conn);
-        //    cmd.ExecuteNonQuery();
-        //    conn.Close();
-        //    MessageBox.Show("Changes Saved");
-        //}
-
         private void add_btn_2_Click(object sender, EventArgs e)
         {
             add_doctor add1 = new add_doctor();

@@ -61,9 +61,9 @@
             this.label5.ForeColor = System.Drawing.Color.DimGray;
             this.label5.Location = new System.Drawing.Point(50, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 15);
+            this.label5.Size = new System.Drawing.Size(67, 15);
             this.label5.TabIndex = 23;
-            this.label5.Text = "DoctorsID";
+            this.label5.Text = "Doctor\'sID";
             // 
             // label4
             // 

@@ -110,11 +110,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Raleway Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(48, 46);
+            this.label1.Location = new System.Drawing.Point(49, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 14);
+            this.label1.Size = new System.Drawing.Size(65, 14);
             this.label1.TabIndex = 24;
-            this.label1.Text = "ID";
+            this.label1.Text = "Doctor\'sID";
             // 
             // button1
             // 

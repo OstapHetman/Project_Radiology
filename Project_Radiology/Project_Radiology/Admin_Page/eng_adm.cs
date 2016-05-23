@@ -15,10 +15,6 @@ namespace Project_Radiology
     {
         HospitalEntities eng;
         SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-        SqlDataAdapter sda;
-        SqlCommandBuilder scb;
-        DataTable dt;
-
         public eng_adm()
         {
             InitializeComponent();
@@ -47,15 +43,6 @@ namespace Project_Radiology
             engineer_1BindingSource.DataSource = eng.Engineer_1;
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            scb = new SqlCommandBuilder(sda);
-            sda.Update(dt);
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             conn.Open();

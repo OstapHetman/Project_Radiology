@@ -19,10 +19,6 @@ namespace Project_Radiology
         HospitalEntities we;
 
         SqlConnection conn = new SqlConnection("Data Source=DELL\\SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-        SqlDataAdapter sda;
-        SqlCommandBuilder scb;
-        DataTable dt;
-
         public Analysis_Engineer()
         {
             InitializeComponent();
@@ -38,19 +34,11 @@ namespace Project_Radiology
 
         private void update_btn_Click(object sender, EventArgs e)
         {
-            //scb = new SqlCommandBuilder(sda);
-            //sda.Update(dt);
+       
         }
 
         private void show_btn_Click(object sender, EventArgs e)
         {
-            //SqlConnection con = new SqlConnection(); //(@"Data Source=DELL/SQLEXPRESS;Initial Catalog=Hospital;Integrated Security=True");
-            //con.ConnectionString = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Hospital;Data Source=DELL/SQLEXPRESS";
-            //con.Open();
-            //SqlDataAdapter  sda = new SqlDataAdapter(@"SELECT * FROM Analysis", con);
-            //DataTable dt = new DataTable();
-            //sda.Fill(dt);
-            //dataGridView1.DataSource = dt;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -114,8 +102,6 @@ namespace Project_Radiology
 
         private void Save_btn_Click(object sender, EventArgs e)
         {
-            //scb = new SqlCommandBuilder(sda);
-            //sda.Update(dt);
 
             this.Validate();
 
@@ -133,13 +119,11 @@ namespace Project_Radiology
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //scb = new SqlCommandBuilder(sda);
-            //sda.Update(dt);
+
         }
 
         private void analysisDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           // this.dataGridViewTextBoxColumn3.Items.AddRange(new object[] {"In process", "Done", "Checked"});
         }
 
         private void Analysis_Engineer_FormClosing(object sender, FormClosingEventArgs e)

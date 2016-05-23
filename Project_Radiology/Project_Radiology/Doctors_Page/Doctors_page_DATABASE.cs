@@ -43,14 +43,21 @@ namespace Project_Radiology
             notifyIcon2.BalloonTipTitle = "REMINDER";
             notifyIcon2.Icon = SystemIcons.Application;
             notifyIcon2.ShowBalloonTip(1000);
-
             // TODO: данная строка кода позволяет загрузить данные в таблицу "hospitalDataSet.Analysis". При необходимости она может быть перемещена или удалена.
             this.analysisTableAdapter.Fill(this.hospitalDataSet.Analysis);
             hos = new HospitalEntities();
             analysisBindingSource.DataSource = hos.Analysis;
 
-
-
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT Distinct [State of analysis] FROM Analysis WHERE [State of analysis] like('" + dataGridViewTextBoxColumn3.CellType + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            analysisBindingSource1.DataSource = dt;
+            conn.Close();
         }
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {

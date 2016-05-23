@@ -120,7 +120,7 @@
             this.analysisDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.analysisDataGridView.AutoGenerateColumns = false;
             this.analysisDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.analysisDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.analysisDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.analysisDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DimGray;

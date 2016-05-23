@@ -94,9 +94,9 @@
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(35, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 15);
+            this.label1.Size = new System.Drawing.Size(68, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "ID";
+            this.label1.Text = "HospitalID";
             // 
             // label2
             // 
