@@ -71,3 +71,4 @@ D:\Sokil\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.Patient
 D:\Sokil\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.Properties.Resources.resources
 D:\Sokil\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.view_items.resources
 D:\Sokil\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.csproj.GenerateResource.Cache
+D:\Sokil\Project_Radiology\Project_Radiology\obj\Debug\Project_Radiology.eng_statistic.resources

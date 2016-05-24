@@ -36,6 +36,7 @@
             this.analysisTableAdapter = new Project_Radiology.HospitalDataSetTableAdapters.AnalysisTableAdapter();
             this.grouped_btn = new System.Windows.Forms.Button();
             this.groped_btn2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analysisBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +95,19 @@
             this.groped_btn2.UseVisualStyleBackColor = true;
             this.groped_btn2.Click += new System.EventHandler(this.groped_btn2_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Raleway Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.DimGray;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(394, 357);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 36);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "List analysis on lab";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // statistic_eng
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +115,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 520);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groped_btn2);
             this.Controls.Add(this.grouped_btn);
             this.Controls.Add(this.log_btn3z);
@@ -108,7 +123,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "statistic_eng";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Statistic";
+            this.Text = "State of analysis";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.statistic_eng_FormClosing);
             this.Load += new System.EventHandler(this.statistic_eng_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hospitalDataSet)).EndInit();
@@ -125,5 +140,6 @@
         private HospitalDataSetTableAdapters.AnalysisTableAdapter analysisTableAdapter;
         private System.Windows.Forms.Button grouped_btn;
         private System.Windows.Forms.Button groped_btn2;
+        private System.Windows.Forms.Button button1;
     }
 }

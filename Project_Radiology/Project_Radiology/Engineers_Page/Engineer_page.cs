@@ -52,5 +52,12 @@ namespace Project_Radiology
                 e.Cancel = true;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            eng_statistic ff = new eng_statistic();
+            ff.Show();
+        }
     }
 }
